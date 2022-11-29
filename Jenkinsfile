@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'devopsnew'} 
+    agent {label 'slave_node12'} 
     stages {
         stage('My Build') { 
             steps {
