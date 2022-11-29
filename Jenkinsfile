@@ -4,6 +4,7 @@ pipeline {
         stage('My Build') { 
             steps {
               sh 'mvn package'
+              sh 'pwd'
             }
         }
         stage('My deploy') { 
