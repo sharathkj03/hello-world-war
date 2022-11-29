@@ -5,7 +5,7 @@ pipeline {
             steps {
               sh 'mvn package'
               sh 'pwd'
-              sh 'ssh -o StrictHostKeyChecking=no'
+              sh 'ssh -o StrictHostKeyChecking=no ubuntu@172.31.13.135'
               sh 'sudo scp -iR /home/newdevops/workspace/my fourth pipeline/target/hello-world-war-1.0.0.war ubuntu@172.31.13.135:/opt/tomcat/webapps/'
             }
         }
