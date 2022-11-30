@@ -5,11 +5,11 @@ pipeline {
             steps {
               sh 'mvn package'
               sh 'pwd'
-              sh 'scp -R /home/sharath/workspace/my fourth pipeline/hello-world-war-1.0.0.war ubuntu@172.31.5.38:/opt/tomcat/webapps/'
+              sh 'scp -R /home/newsnoofy/workspace/my fourth pipeline/hello-world-war-1.0.0.war ubuntu@172.31.5.38:/opt/tomcat/webapps/'
             }
         }
         stage('My deploy') { 
-        agent {label 'slave_node12'}
+        agent {label 'newdevops'}
             steps {
               sh 'sudo sh /opt/tomcat/bin/shutdown.sh'
               sh 'sleep 2'
