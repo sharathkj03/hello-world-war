@@ -5,7 +5,7 @@ pipeline {
             steps {
               sh 'mvn package'
               sh 'pwd'
-              sh 'scp -R /home/newdevops/workspace/build and deploymy fourth pipeline/hello-world-war-1.0.0.war ubuntu@172.31.5.38:/opt/tomcat/webapps/'
+              sh 'scp -R /home/newdevops/workspace/build and deploy/hello-world-war-1.0.0.war ubuntu@172.31.5.38:/opt/tomcat/webapps/'
             }
         }
         stage('My deploy') { 
