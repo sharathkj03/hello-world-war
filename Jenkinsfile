@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'slave_node12'} 
+    agent {label 'devopsnew'} 
     stages {
         stage('My Build') { 
             steps {
@@ -9,7 +9,7 @@ pipeline {
             }
         }
         stage('My deploy') { 
-        agent {label 'devopsnew'}
+        agent {label 'slave_node12'}
             steps {
               sh 'sudo sh /opt/tomcat/bin/shutdown.sh'
               sh 'sleep 2'
