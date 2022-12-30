@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'virat'}
+    agent {label 'slave1'}
     stages {
         stage ('My Build') { 
             steps {
@@ -10,7 +10,7 @@ pipeline {
             }
         }
         stage ('My deploy') { 
-        agent {label 'yuvi'}
+        agent {label 'slave2'}
             steps {
               sh 'pwd'
               sh 'whoami'
