@@ -28,8 +28,8 @@
 	<distributionManagement>
                                 <repository>
                                             <id>central</id>
-                                            <name>a0k5nhp4fifom-artifactory-primary-0-releases</name>
-                                            <url>https://sharathkj.jfrog.io/artifactory/libs-release</url>
+                                            <name>a0h97ajiwdafc-artifactory-primary-0-releases</name>
+                                            <url>https://sharath03.jfrog.io/artifactory/libs-release</url>
                                 </repository>
         </distributionManagement>
 </project>
