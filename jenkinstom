@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('my Build') {
             steps {
-                sh "echo ${BUILD_NUMBER}"
                 sh 'docker build -t tomcat_build:${BUILD_VERSION} .'
             }
         }  
