@@ -1,12 +1,12 @@
-selector_label: tomcat
-deployment_name: tomcat
-replicas: 2
-registry_name: sharath03
-docker_repo_name: tomcat_maven
-image_tag: 21
-port_name: tomcat
-target_port: 8080
-port: 8080
+selector_label: 
+deployment_name: 
+replicas: 
+registry_name: 
+docker_repo_name: 
+image_tag: 
+port_name: 
+target_port: 
+port: 
 favorite:
-  drink: coffee
-  food: pizza
+  drink: 
+  food: 
