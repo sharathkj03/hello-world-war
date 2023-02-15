@@ -12,7 +12,7 @@ pipeline {
             }
         } 
         stage( 'my deploy' ) {
-        agent {label 's'} 
+        agent {label 'kube'} 
             steps {
                sh 'helm repo add helm https://sharath2021.jfrog.io/artifactory/api/helm/helm --username kjsharath5@gmail.com --password Karunadu@13'
                sh 'helm repo update'
